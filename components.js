@@ -88,7 +88,7 @@
                 <h4 class="playfair" style="margin-bottom:20px;">İletişim</h4>
                 <p style="font-size:0.9rem; margin-bottom:10px;">📍 Londra Ofisi<br>122 St Pancras Way, NW1 9NB<br>+44 7301269253</p>
                 <p style="font-size:0.9rem; margin-bottom:10px;">📍 İstanbul Ofisi (Trump Towers)<br>Mecidiyeköy Yolu Cad. No 12,<br>Tower 2, Floor 18, IST/34387<br>+90 5459450343</p>
-                <a href="mailto:info@sourcemyproperty.co.uk" style="font-size:0.9rem;">📧 info@sourcemyproperty.co.uk</a>
+                <a href="mailto:info@smpinternational.co.uk" style="font-size:0.9rem;">📧 info@smpinternational.co.uk</a>
             </div>
         </div>
         <div class="footer-bottom">
