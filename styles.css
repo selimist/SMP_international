@@ -38,7 +38,7 @@ h4,
 }
 
 section {
-    padding: 30px 5%;
+    padding: 15px 5%;
 }
 
 .container {
@@ -791,7 +791,7 @@ ul {
 
     /* Global Section Spacing Fix */
     section {
-        padding: 30px 13px !important;
+        padding: 30px 5px !important;
     }
 
     /* Why UK Striking specific fix */
@@ -834,7 +834,7 @@ ul {
     }
 
     h2 {
-        font-size: 1.75rem !important;
+        font-size: 1.3rem !important;
         line-height: 1.2 !important;
     }
 

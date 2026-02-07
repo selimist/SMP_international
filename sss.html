@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İngiltere Gayrimenkul Yatırım Rehberi | SSS</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --brand-color: #2d4356;
             --brand-hover: #1f3040;
-            --soft-bg: #f8fafc;
+            --soft-bg: #f5f5f5;
         }
         
         body {
@@ -30,17 +31,18 @@
         }
 
         .brand-bg { background-color: var(--brand-color); }
+        .brand-bglight { background-color: #2d4356d6; }
         .brand-text { color: var(--brand-color); }
 
         /* Navigasyon Linkleri */
         .toc-link {
             transition: all 0.2s;
             border: 1px solid #cbd5e1;
-            background: white;
+            background: rgb(241, 241, 241);
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 8px 16px;
+            padding: 4px 5px;
             border-radius: 6px;
             font-size: 0.8rem;
             font-weight: 700;
@@ -134,7 +136,7 @@
             font-weight: 700;
             font-size: 1.25rem;
             border-radius: 8px;
-            margin-right: 1rem;
+            margin-right: 0.7rem;
         }
 
         .back-to-top {
@@ -165,12 +167,19 @@
 </head>
 <body>
 
+<div id="header-placeholder"></div>
+
+    <div style="background: var(--navy); padding: 90px 5% 10px; text-align: center; color: var(--white);">
+        <h1 class="playfair" style="font-size: 3.5rem;">Sıkça Sorulan Sorular</h1>
+        <p style="opacity: 0.8; margin-top: 5px; max-width: 600px; margin-left: auto; margin-right: auto;">Uluslararası alıcıların İngiltere'de gayrimenkul satın alması hakkında bilmeniz gereken her şey</p>
+    </div>
+
 <div class="bg-pattern"></div>
 
 <!-- Navigasyon -->
-<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b shadow-sm py-4">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="flex flex-wrap justify-center gap-2" id="toc-container">
+<nav class="sticky z-50 brand-bglight backdrop-blur-sm border-b shadow-sm py-4" style="top: 75px;">
+    <div class="max-w-7xl mx-auto px-2">
+        <div class="flex flex-wrap justify-center gap-1" id="toc-container">
             <a href="#A" class="toc-link">A. Hukuki</a>
             <a href="#B" class="toc-link">B. Alım Vergisi</a>
             <a href="#C" class="toc-link">C. Mülk Vergisi</a>
@@ -191,10 +200,10 @@
     </div>
 </nav>
 
-<main class="max-w-5xl mx-auto py-12 px-6">
+<main class="max-w-5xl mx-auto pb-12 px-6" style="padding-top: 5px;">
 
     <!-- A. Hukuki Konular ve Mülkiyet -->
-    <section id="A" class="mb-16 scroll-mt-28">
+    <section id="A" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">A</div>
             <h2 class="text-2xl font-bold text-slate-800">Hukuki Konular ve Mülkiyet</h2>
@@ -287,7 +296,7 @@
     </section>
 
     <!-- B. Vergiler — Satın Alma -->
-    <section id="B" class="mb-16 scroll-mt-28">
+    <section id="B" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">B</div>
             <h2 class="text-2xl font-bold text-slate-800">Vergiler - Satın Alma</h2>
@@ -355,7 +364,7 @@
     </section>
 
     <!-- C. Vergiler — Süregelen Mülkiyet -->
-    <section id="C" class="mb-16 scroll-mt-28">
+    <section id="C" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">C</div>
             <h2 class="text-2xl font-bold text-slate-800">Vergiler - Süregelen Mülkiyet</h2>
@@ -447,7 +456,7 @@
     </section>
 
     <!-- D. Vergiler — Satış ve Miras -->
-    <section id="D" class="mb-16 scroll-mt-28">
+    <section id="D" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">D</div>
             <h2 class="text-2xl font-bold text-slate-800">Vergiler - Satış ve Miras</h2>
@@ -521,7 +530,7 @@
     </section>
 
     <!-- E. İpotek ve Finansman -->
-    <section id="E" class="mb-16 scroll-mt-28">
+    <section id="E" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">E</div>
             <h2 class="text-2xl font-bold text-slate-800">İpotek ve Finansman</h2>
@@ -617,7 +626,7 @@
     </section>
 
     <!-- F. Mülk Yönetimi ve Kiralama -->
-    <section id="F" class="mb-16 scroll-mt-28">
+    <section id="F" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">F</div>
             <h2 class="text-2xl font-bold text-slate-800">Mülk Yönetimi ve Kiralama</h2>
@@ -724,7 +733,7 @@
     </section>
 
     <!-- G. Satın Alma Süreci -->
-    <section id="G" class="mb-16 scroll-mt-28">
+    <section id="G" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">G</div>
             <h2 class="text-2xl font-bold text-slate-800">Satın Alma Süreci</h2>
@@ -820,7 +829,7 @@
     </section>
 
     <!-- H. Piyasa ve Yatırım Riskleri -->
-    <section id="H" class="mb-16 scroll-mt-28">
+    <section id="H" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">H</div>
             <h2 class="text-2xl font-bold text-slate-800">Piyasa ve Yatırım Riskleri</h2>
@@ -905,7 +914,7 @@
     </section>
 
     <!-- I. Öğrencilere Özel Sorular -->
-    <section id="I" class="mb-16 scroll-mt-28">
+    <section id="I" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">I</div>
             <h2 class="text-2xl font-bold text-slate-800">Öğrencilere Özel Sorular</h2>
@@ -968,7 +977,7 @@
     </section>
 
     <!-- J. Sigorta ve Koruma -->
-    <section id="J" class="mb-16 scroll-mt-28">
+    <section id="J" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">J</div>
             <h2 class="text-2xl font-bold text-slate-800">Sigorta ve Koruma</h2>
@@ -1009,7 +1018,7 @@
     </section>
 
     <!-- K. Vize ve İkamet -->
-    <section id="K" class="mb-16 scroll-mt-28">
+    <section id="K" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">K</div>
             <h2 class="text-2xl font-bold text-slate-800">Vize ve İkamet</h2>
@@ -1061,7 +1070,7 @@
     </section>
 
     <!-- L. Proje Seçimi ve Geliştiriciler -->
-    <section id="L" class="mb-16 scroll-mt-28">
+    <section id="L" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">L</div>
             <h2 class="text-2xl font-bold text-slate-800">Proje Seçimi ve Geliştiriciler</h2>
@@ -1146,7 +1155,7 @@
     </section>
 
     <!-- M. Lokasyon ve Değer Analizi -->
-    <section id="M" class="mb-16 scroll-mt-28">
+    <section id="M" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">M</div>
             <h2 class="text-2xl font-bold text-slate-800">Lokasyon ve Değer Analizi</h2>
@@ -1198,7 +1207,7 @@
     </section>
 
     <!-- N. Bankacılık ve Döviz -->
-    <section id="N" class="mb-16 scroll-mt-28">
+    <section id="N" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">N</div>
             <h2 class="text-2xl font-bold text-slate-800">Bankacılık ve Döviz</h2>
@@ -1239,7 +1248,7 @@
     </section>
 
     <!-- O. Tamamlama ve Teslimat -->
-    <section id="O" class="mb-16 scroll-mt-28">
+    <section id="O" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">O</div>
             <h2 class="text-2xl font-bold text-slate-800">Tamamlama ve Teslimat</h2>
@@ -1291,7 +1300,7 @@
     </section>
 
     <!-- P. Mülkünüzü Satma -->
-    <section id="P" class="mb-16 scroll-mt-28">
+    <section id="P" class="mb-0 scroll-mt-[170px]">
         <div class="section-header">
             <div class="letter-box">P</div>
             <h2 class="text-2xl font-bold text-slate-800">Mülkünüzü Satma</h2>
@@ -1353,18 +1362,23 @@
         </div>
     </section>
 
-    <p style="text-align: center; margin-bottom: 13px; font-size: x-large;">
+    <p style="text-align: center; margin-top: 30px; margin-bottom: 13px; font-size: x-large;">
         <strong>Hâlâ Sorularınız mı Var?</strong></p>
     <p style="text-align: center">
         Ekibimiz, uluslararası ailelere İngiltere gayrimenkul yolculuğunun her adımında rehberlik etmede uzmanlaşmıştır.</p>
 
 </main>
 
+<div id="footer-placeholder"></div>
+
 <button id="backToTop" class="back-to-top">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
     </svg>
 </button>
+
+<script src="components.js"></script>
+<script src="script.js"></script>
 
 <script>
     // Akordeon İşlevselliği
