@@ -542,6 +542,17 @@ ul {
     font-size: 0.9rem;
 }
 
+/* Footer logo — orantıyı koru */
+.footer-logo {
+    display: inline-block;
+}
+
+.footer-logo img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
 /* Performance Comparison Responsive fix */
 .performance-comparison .container>div:last-of-type {
     display: grid;

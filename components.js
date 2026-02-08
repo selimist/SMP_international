@@ -57,8 +57,8 @@
     <footer class="footer">
         <div class="container footer-grid-refined">
             <div>
-                <a href="${logoHref}" class="logo">
-                    <img src="assets/smp_logo_navy2.png" alt="SMP International" style="height: 45px;">
+                <a href="${logoHref}" class="logo footer-logo">
+                    <img src="assets/smp_logo_navy2.png" alt="SMP International" style="height: 55px; object-fit: contain;">
                 </a>
                 <p style="margin-top:20px; font-size:0.9rem; color:var(--gray-text);">İngiltere emlak yatırımında profesyonel ortağınız. Sterlin bazlı güvenli gelecek.</p><br>
                 <div style="display: flex; gap: 20px; align-items: center;">
@@ -72,9 +72,9 @@
                         <i class="fab fa-youtube" style="font-size: 30px;"></i>
                     </a>
                 </div>
-                <a href="${logoHref}" class="logo">
-                    <img src="assets/Berkeley_logox.png" alt="SMP International" style="height: 45px; margin-top: 25px;">
-                </a>
+                
+                    <img src="assets/Berkeley_logox.png" alt="Berkeley Group" style="height: 85px; display: block; margin: 25px auto 0; object-fit: contain;">
+                
             </div>
             <div>
                 <h4 class="playfair" style="margin-bottom:20px;">Hızlı Menü</h4>
