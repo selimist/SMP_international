@@ -521,6 +521,134 @@ ul {
     max-height: 200px;
 }
 
+/* Credentials Section */
+.credentials-section {
+    padding: 15px 5%;
+    background: var(--navy);
+}
+
+.credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.credential-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 6px;
+    text-align: center;
+    border-bottom: 4px solid var(--navy);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.credential-card:hover {
+    transform: translateY(-5px);
+}
+
+.credential-card.card-navy {
+    background: var(--navy);
+    color: #fff;
+    border-bottom: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.credential-bg-icon {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    font-size: 5rem;
+    color: rgba(255,255,255,0.08);
+    transform: rotate(12deg);
+}
+.credential-inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.credential-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 7px;
+    font-size: 1.1rem;
+}
+.icon-blue {
+    background: #EFF6FF;
+    color: var(--navy);
+}
+.icon-gold {
+    background: rgba(255,255,255,0.1);
+    color: #FACC15;
+}
+.icon-green {
+    background: #F0FDF4;
+    color: #16A34A;
+}
+
+.credential-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+}
+
+.credential-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray-text);
+}
+
+.credential-award-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.credential-divider {
+    width: 48px;
+    height: 3px;
+    background: #FACC15;
+    margin: 8px auto;
+}
+.credential-award-sub {
+    font-size: 0.8rem;
+    color: var(--gray-text);
+}
+
+.credential-compliance-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 4px;
+}
+.credential-check {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+}
+.credential-check i {
+    color: #22C55E;
+    font-size: 0.8rem;
+}
+.credential-check p {
+    font-size: 0.8rem;
+    color: var(--gray-text);
+}
+
 /* Footer */
 .footer {
     background: var(--sage-footer);
@@ -617,6 +745,25 @@ ul {
 }
 
 @media (max-width: 768px) {
+    .credentials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .credential-card {
+        padding: 5px;
+    }
+    .credential-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .credential-value {
+        font-size: 1.5rem;
+    }
+    .credential-award-title {
+        font-size: 0.85rem;
+    }
+
     .header {
         padding: 10px 0;
         background: rgba(45, 67, 86, 0.95);
@@ -811,7 +958,7 @@ ul {
 
     /* Global Section Spacing Fix */
     section {
-        padding: 20px 5px !important;
+        padding: 12px 5px !important;
     }
 
     /* Why UK Striking specific fix */
